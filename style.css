@@ -1,0 +1,132 @@
+.container {
+  display: flex;
+}
+
+body {
+ background-image: url('background3.jpg');
+ height: 100%;
+ background-size: cover;
+ background-clip: content-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 0vh;
+  padding: 10px;
+  color: white;
+}
+
+.header2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  color: white;
+  margin-bottom: 1px;
+}
+
+#level-container {
+  margin-top: 0px;
+}
+
+.scoreTitle {
+  margin-top: 5px;
+}
+
+
+
+#start-button {
+  margin-right: 10px;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 8px;
+  color: white;
+  background-color: transparent;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 3px;
+  box-shadow: 0px 0px 8px blue;
+}
+
+
+.grid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: transparent;
+  background-image: cover;
+  background-size: cover;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 3px;
+  box-shadow: 0px 0px 6px blue;
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+}
+
+
+.tetromino {
+  background-color: blue;
+  border: 0px solid #FFFFFF;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px #FFFFFF;
+  display: inline-block;
+}
+
+
+.mini-grid {
+  margin-left: 50px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: transparent;
+  position: absolute;
+  top: 37.8%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 3px;
+  box-shadow: 0px 0px 6px blue;
+
+}
+
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+}
+
+
+.game-over-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 180px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+  color: rgb(0, 21, 255);
+  padding: 20px;
+  border: 1px solid black;
+}
+
+#audioPlayer {
+  display: none;
+}
